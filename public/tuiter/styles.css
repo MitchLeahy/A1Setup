@@ -257,3 +257,19 @@ float: center;
 .color-red{ 
     color: red;
 }
+.wd-search{
+    bottom: 12px;
+    left: 18px;
+    
+}
+.wd-cog{
+    bottom: 12px;
+    right: 18px;
+}
+.side-bar-profile-pic{
+    /* border-radius: 50%; */
+    height: 40px;
+    width: 40px;
+    /* padding-top: 12px;
+    padding-left: 16px; */
+}
