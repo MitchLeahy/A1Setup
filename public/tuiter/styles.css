@@ -273,3 +273,7 @@ float: center;
     /* padding-top: 12px;
     padding-left: 16px; */
 }
+.follow-btn {
+    height: 40px;
+    width: 75px;
+}

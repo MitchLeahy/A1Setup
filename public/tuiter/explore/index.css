@@ -1,0 +1,49 @@
+.color-lgtblue {
+    color: #1da1f2;
+}
+.bg-color-lgtblue {
+    background-color: #1da1f2;
+    border: none;
+}
+.bg-color-lgtgrey
+{
+    background-color: #f9f3f3ea;
+    border:none;
+}
+.color-grey {
+    color: #c9c7c7;
+}
+.color-black {
+    color: #000000;
+}
+.text-bold{
+    font-weight: bold;
+    color:black;
+}
+.span-float-left-inline{
+    float: left;
+    display: inline;
+    /* text-align: center; */
+}
+.no-border{
+    border: none;
+}
+.follow-btn {
+    height: 40px;
+    width: 75px;
+    background-color: black;
+    border:none;
+}
+.wd-cog{
+    bottom: 12px;
+    right: 18px;
+    color:black;
+}
+.tab-selected{
+    border-bottom: 2px solid #1da1f2;
+    color: black;
+    font-weight: bold;
+}
+.above-bottom-5{
+    bottom: 0px;
+}
