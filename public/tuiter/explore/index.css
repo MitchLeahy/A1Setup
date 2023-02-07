@@ -47,3 +47,17 @@
 .above-bottom-5{
     bottom: 0px;
 }
+.no-top-bottom-border{
+    border-top: none;
+    border-bottom: none;
+}
+.side-border{
+    border-left: 1px solid #c9c7c7;
+    border-right: 1px solid #c9c7c7;
+}
+.bottom-border{
+    border-bottom: 1px solid #c9c7c7;
+}
+.top-border{
+    border-top: 1px solid #c9c7c7;
+}
