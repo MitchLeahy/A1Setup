@@ -1,7 +1,7 @@
-import tuits from "./tuits.js";   
+
 import tuitComponent from "./tuit-components.js";
 
-function mainContents() {
+function ExploreCompenents(lst) {
     return(`
     <div class = "row">
 
@@ -40,7 +40,7 @@ function mainContents() {
         </div>
 
         <ul class = "list-group ">
-            ${tuits.map(tuit => tuitComponent(tuit)).join('')}
+            ${lst.map(tuit => tuitComponent(tuit)).join('')}
         </ul>
 
 
@@ -48,4 +48,4 @@ function mainContents() {
     `)
 }
 
-export default mainContents;
+export default ExploreCompenents;

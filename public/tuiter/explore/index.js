@@ -1,7 +1,8 @@
 import navigation from "./navigation.js";
-import mainContents from "./main-contents.js";
+import ExploreCompenents from "./ExploreComponent.js";
 import whoToFollow from "./who-to-follow.js";
  
+import tuits from "./tuits.js";   
 
 
 
@@ -18,7 +19,7 @@ function init() {
             
             <!--feed col-->
             <div class = "col-10 col-lg-6  side-border">
-                ${mainContents()}   
+                ${ExploreCompenents(tuits)}   
             </div>
 
             <!--who to follow col-->
