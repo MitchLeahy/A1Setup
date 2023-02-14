@@ -4,7 +4,7 @@ import whoToFollow from "./who-to-follow.js";
  
 import tuits from "./tuits.js";   
 
-
+import addSelectedOnClick from "../HomeScreen/Functions/ClickFunctions.js";
 
 function init() {
     $("#explore").append(`
@@ -31,6 +31,8 @@ function init() {
         
     
     `);
+   addSelectedOnClick(".list-group-item");
+   addSelectedOnClick(".nav-item");
 
 }
 $(init);

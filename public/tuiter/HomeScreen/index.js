@@ -2,9 +2,9 @@ import navigation from "../explore/navigation.js";
 // import PostItem from "./PostList/PostItem.js";
 import PostItems from "./PostList/PostItems.js";
 import PostList from "./PostList/PostList.js";
+import addSelectedOnClick from "./Functions/ClickFunctions.js";
 
 
- 
 
 
 
@@ -28,6 +28,8 @@ function init() {
     </div>
     
     `);
+    addSelectedOnClick(".list-group-item");
+    addSelectedOnClick(".nav-item");
 
 }
 $(init);

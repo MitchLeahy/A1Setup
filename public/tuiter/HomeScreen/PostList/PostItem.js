@@ -12,9 +12,9 @@ function PostItem(post) {
                     <span class = "color-white">${post.title}</span>
                 </div>
 
-                <div class = "post-content mt-1">
-                    <div class = "row p-1">
-                        <img class = "rounded " src= ${post.image}>
+                <div class = "border border-white rounded mt-1">
+                    <div class = "row">
+                        <img class = "img-within-div" src= ${post.image}>
                     </div>
                     <div class = "row mb-1 p-2">
                         <div class = "row">

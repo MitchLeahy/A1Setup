@@ -1,7 +1,4 @@
-// $('.list-group-item').on('click', function() {
-// 	$('.tab').removeClass('tab-selected');
-// 	$(this).addClass('tab-selected');
-// });
+
 
 function navigation() {
     return(`
@@ -12,12 +9,12 @@ function navigation() {
             <span class="fa-brands fa-twitter color-lgtblue"></span>
         </a>
 
-        <a href="../HomeScreen/index.html" class="color-white list-group-item list-group-item-action no-border position-relative">
+        <a href="../HomeScreen/index.html" class="color-white list-group-item list-group-item-action no-border position-relative selected ">
             <span class="fa-solid fa-house-chimney span-float-left-inline pt-1"></span>
             <span class ="d-none d-xl-block span-float-left-inline ms-3 "> Home</span>
         </a>
 
-        <div class = "list-group-item   text-bold no-border tab-selected">
+        <div class = "list-group-item  no-border ">
         <a href="../explore/index.html" class = "color-white">
             <i class="fa-solid fa-hashtag span-float-left-inline pt-1 "></i> <span class ="d-none d-xl-block span-float-left-inline ms-3">Explore</span></a>
         </div>
