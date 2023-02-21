@@ -9,15 +9,19 @@ const NavigationSidebar = () => {
  const paths = pathname.split('/')
  const activeLabs = paths[2];
 
- const links =["home","explore","notifications","messages","bookmarks","lists","profile","more"]
+ const links =["explore","notifications","messages","bookmarks","lists","profile","more"]
   return (
+    
    <div className="list-group">
+    <Link to= {"/tuiter/"}  key = '11111'className={`list-group-item ${activeLabs === "" ?'active':''}`}>
+       Home
+     </Link>
 
        {
-      links.map(link => {
+      links.map((link,index) => {
         const active = pathname.indexOf(link) >= 0 ? 'active' : ''
         return(
-     <Link to= {`/tuiter/${link}`} className={`text-capitalize list-group-item ${active}`}>
+     <Link to= {`/tuiter/${link}`} key = {`${index}`} className={`text-capitalize list-group-item ${active}`}>
        {link}
      </Link>
         )
@@ -25,7 +29,7 @@ const NavigationSidebar = () => {
 }
       )
 }
-<Link to= {`/labs`}  className={`list-group-item ${activeLabs === 'labs'?'active':''}`}>
+<Link to= {`/`}  key = '22222'className={`list-group-item ${activeLabs === 'labs'?'active':''}`}>
        Labs
      </Link>
 
