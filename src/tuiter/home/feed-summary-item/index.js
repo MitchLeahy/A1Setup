@@ -8,7 +8,7 @@ const FeedSummaryItem = ({post}) => {
     <li className = "list-group-item no-border top-border bottom-border">
         <div className = "row">
             
-            <div className= "col-1"> <img className = "post-profile-pic" src= {`${post.avatarIcon}`}/> </div>
+            <div className= "col-1"> <img className = "post-profile-pic" alt = "" src= {`${post.avatarIcon}`}/> </div>
             
             <div className = "col-11"> 
 
@@ -21,7 +21,7 @@ const FeedSummaryItem = ({post}) => {
 
                 <div className = "border border-black rounded mt-1">
                     <div className = "row">
-                        <img className = "img-within-div" src= {`${post.image}`}/>
+                        <img className = "img-within-div" alt = "" src= {`${post.image}`}/>
                     </div>
 
                     <div className = "row mb-1 p-2">
