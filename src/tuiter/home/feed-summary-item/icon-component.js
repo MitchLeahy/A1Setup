@@ -9,20 +9,20 @@ const IconComponent = () => {
                 
             
             <div className = "col-3 ">
-                <a href = "/"><FontAwesomeIcon icon={faHeart} /></a>
+                <FontAwesomeIcon icon={faHeart} />
                 <span className = "left-padding-12 font-lgrey"> 222</span>
             </div>
 
             <div className = "col-3">
-                <a href = "/"><FontAwesomeIcon icon={faRetweet} /></a>
+                <FontAwesomeIcon icon={faRetweet} />
                 <span className = "left-padding-12 font-lgrey"> 1122</span>
             </div>
             <div className = "col-3">
-                <a href = "/"><FontAwesomeIcon icon={faComment} /></a>
+                <FontAwesomeIcon icon={faComment} />
                 <span className = "left-padding-12 font-lgrey"> 292</span>
             </div>
             <div className = "col-3">
-                <a href = "/"><FontAwesomeIcon icon={faShare} /></a>
+                <FontAwesomeIcon icon={faShare} />
                 <span className = "left-padding-12 font-lgrey"> 242</span>
             </div>
                  
