@@ -3,7 +3,7 @@ import './index.css';
 import PreJson from '../../../compenents/PreJson';
 
 function Classes() {
-    const color = 'green';
+
     const dangerous = false;
     const sampleJson = {
       a:1,
