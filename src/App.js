@@ -20,7 +20,7 @@ function App() {
           {/* if statement that operates off the url path */}
           <Route path="/hello" element={<h1>Hello World</h1>} />
           {/* sets index to labs */}
-          <Route index  element={<Labs/>} />
+          <Route path ="/*" element={<Labs/>} />
           {/* sets tuiter to tuiter  and allows for routeing to be created there*/}
           <Route path="/tuiter/*" element={<Tuiter/>} />
         </Routes>

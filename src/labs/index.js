@@ -1,17 +1,20 @@
 import A6 from './a6';
 import Nav from '../nav.js';
+import A7 from './a7'
+import {Routes, Route} from "react-router";
 
-function Labs () {
+const Labs = () => {
     return (
     <div>
-        <h1>
-            Labs
-        </h1>
-        <Nav />
-        <A6/>
+
+        <Nav/>
+        <Routes>
+            <Route index element= {<A6/>}/>
+            <Route path = "/a7" element= {<A7/>}/>
+        </Routes>
         
     </div>
 
-    )
-}
+    );
+};
 export default Labs;
