@@ -20,6 +20,9 @@
 .color-white {
   color: #ffffff;
 }
+.color-red {
+  color: red
+}
 .text-bold{
   font-weight: bold;
   color:black;

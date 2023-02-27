@@ -1,19 +1,20 @@
 import React from 'react';
-import IconComponent from './icon-component.js';
+import TuitStats from './TuitStats';
 
 
 
 
-const FeedSummaryItem = ({post}) => {
+const TuitItem = ({post}) => {
+    
 
     return(
     
     <li className = "list-group-item no-border top-border bottom-border">
         <div className = "row">
             
-            <div className= "col-1"> <img className = "post-profile-pic" alt = "" src= {`${post.image}`}/> </div>
+            <div className= "col-2"> <img className = "post-profile-pic" alt = "" src= {`${post.image}`}/> </div>
             
-            <div className = "col-11"> 
+            <div className = "col-10"> 
 
                 <div className = "row">
                     <span className = " color-black">{post.userName} <i className="fa-solid fa-check"></i> {post.handle} - {post.time}</span>
@@ -22,12 +23,12 @@ const FeedSummaryItem = ({post}) => {
                     <span className = "color-black">{post.title}</span>
                 </div>
 
-                <div className = "border border-black rounded mt-1">
+                {/* <div className = "border border-black rounded mt-1">
                     <div className = "row">
                         <img className = "img-within-div" alt = "" src= {`${post.image}`}/>
-                    </div>
+                    </div> */}
 
-                    <div className = "row mb-1 p-2">
+                    {/* <div className = "row mb-1 p-2">
                         <div className = "row">
                             <span className = "color-black">{post.title}</span>
                         </div>
@@ -36,8 +37,8 @@ const FeedSummaryItem = ({post}) => {
                         </div>
 
                     </div>
-                </div>
-                <IconComponent/>
+                </div> */}
+                <TuitStats key={post._id} post={post}/>
 
             </div>
         </div>
@@ -47,4 +48,4 @@ const FeedSummaryItem = ({post}) => {
     
     };
     
-    export default FeedSummaryItem;
+    export default TuitItem;
