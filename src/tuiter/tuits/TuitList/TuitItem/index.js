@@ -1,11 +1,14 @@
 import React from 'react';
 import TuitStats from './TuitStats';
+import {useDispatch} from "react-redux";
 
-
+import {deleteTuit} from "../../../reducers/tuits-reducer";
 
 
 const TuitItem = ({post}) => {
     
+    const dispatch = useDispatch();
+    const deleteTuitHandler = (id) => { dispatch(deleteTuit(id));}
 
     return(
     
@@ -17,27 +20,13 @@ const TuitItem = ({post}) => {
             <div className = "col-10"> 
 
                 <div className = "row">
+                <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(post._id)}></i>
                     <span className = " color-black">{post.userName} <i className="fa-solid fa-check"></i> {post.handle} - {post.time}</span>
                 </div>
                 <div className = "row">
-                    <span className = "color-black">{post.title}</span>
+                    <span className = "color-black">{post.tuit}</span>
                 </div>
 
-                {/* <div className = "border border-black rounded mt-1">
-                    <div className = "row">
-                        <img className = "img-within-div" alt = "" src= {`${post.image}`}/>
-                    </div> */}
-
-                    {/* <div className = "row mb-1 p-2">
-                        <div className = "row">
-                            <span className = "color-black">{post.title}</span>
-                        </div>
-                        <div className = "row">
-                            <span className = "color-black">{post.content}</span>
-                        </div>
-
-                    </div>
-                </div> */}
                 <TuitStats key={post._id} post={post}/>
 
             </div>
