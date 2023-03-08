@@ -1,0 +1,9 @@
+[{
+    "_id": "1", "firstName" : "Jose", "lastName" : "Annunziato", "handle" : "@jannunzi",
+    "profilePicture" : "https://media.licdn.com/dms/image/D4E03AQFWCGthVjrUCw/profile-displayphoto-shrink_200_200/0/1674741805868?e=1683763200&v=beta&t=j6tDQNIWG8fovOz8e2oYUnloe9qg70Ow5jMDQflUydk", 	"bannerPicture" : "https://www.winterparkresort.com/-/media/winter-park/winter-2223/220402_charlesstemen_dsc01298.jpg?rev=b076ac2d8e264d62b525c51e4708244a?h=1668&w=2500&hash=A972FD854672FBC64F85070419FD1442",
+    "bio" : "Faculty, Software Engineer, AI, Space, and renewable enthusiast.Retuits and likes are not endorsements.",
+    "website" : "youtube.com/webdevtv",
+    "location" : "Boston, MA",	"dateOfBirth" : "7/7/1968",	"dateJoined" : "4/2009",
+    "followingCount" : 340,	"followersCount" : 223, "tweetsCount" : 1000
+  }
+]
