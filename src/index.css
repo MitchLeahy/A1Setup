@@ -20,6 +20,9 @@
 .color-white {
   color: #ffffff;
 }
+.color-red {
+  color: red
+}
 .text-bold{
   font-weight: bold;
   color:black;
@@ -381,4 +384,19 @@ float: center;
   
   
       
+}
+.profile-profile-pic{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+.align-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.align-left{
+  display: flex;
+  justify-content: left;
+  align-items: left;
 }

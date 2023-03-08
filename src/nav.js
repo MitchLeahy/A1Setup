@@ -1,12 +1,13 @@
 import {Link} from 'react-router-dom'
 
-const Nav = () => {
+function Nav () {
     return (
        <div>
         <Link to = "/" >Labs</Link>|
-        <Link to = "/hello" >Hello</Link>|
+        <Link to = "/" >A6</Link>|
+        <Link to ="/a7">A7</Link>|
         <Link to = "/tuiter" >Tuiter</Link>
-
+        
        </div>
     )
     }

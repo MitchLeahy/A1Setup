@@ -3,7 +3,7 @@ import Styles from "./styles";
 import ConditionalOutput from "./conditional-output";
 import TodoList from "../todo/todo-list.js"; 
 
-function A6() {
+const A6 = () => {
    return ( 
 <div>
 <h2>
@@ -15,6 +15,6 @@ function A6() {
    <TodoList/>
 </div>
    );
-}
+};
 export default A6;
 

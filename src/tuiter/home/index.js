@@ -1,17 +1,18 @@
 import React from "react";
-import feedArray from './feed.json';
-import FeedSummaryItem from "./feed-summary-item";
+import TuitComponent from "../tuits/TuitList";
+import WhatsHappening from "./whats-happening";
 
 
 const HomeComponent = () => {
+  
  return(
-   <ul className="list-group">
-     {
-       feedArray.map(post =>
-         <FeedSummaryItem
-           key={post._id} post={post}/> )
-     }
-   </ul>
+  <div>
+   <h4> Home</h4>
+    <WhatsHappening/>
+    <TuitComponent/>
+   </div>
  );
 };
 export default HomeComponent;
+
+
