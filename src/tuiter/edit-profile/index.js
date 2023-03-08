@@ -15,7 +15,7 @@ const EditProfileComponent = () => {
     let [inputHandleState, setInputHandleState] = useState(profile.handle);
     let [inputBioState, setInputBioState] = useState(profile.bio);
     let [inputLocationState, setInputLocationState] = useState(profile.location);
-    let [inputDateOfBirthState, setInputDateOfBirthState] = useState(profile.dateOfBirth);
+    // let [inputDateOfBirthState, setInputDateOfBirthState] = useState(profile.dateOfBirth);
 
     const updateProfileHandler = () => {
         dispatch(editProfileFunc({
