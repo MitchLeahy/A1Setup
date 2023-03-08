@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+</head>
+<body>
+   <h1>HTML Examples</h1>
+
+   <h2>Table of contents</h2>
+    <ol>
+        <li><a href="#embedding-website">Embedding Websites</a></li>
+        <li><a href="#embedding-youtube">Embedding Youtube</a></li>
+        <li><a href="#embedding-slides">Embedding Slides</a></li>
+
+    </ol>
+
+   <h2>Heading Tags</h2>
+
+   Text documents are often broken up into several sections and subsections. Each section is usually prefaced with a short title or heading that attempts to summarize the topic of the section it precedes. For instance this paragraph is preceded by the heading Heading Tags. The font of the section headings are usually larger and bolder than their subsection headings. This document uses headings to introduce topics such as HTML Documents, HTML Tags, Heading Tags, etc. HTML heading tags can be used to format plain text so that it renders in a browser as large headings. There are 6 heading tags: h1, h2, h3, h4, h5, and h6. Tag h1 is the largest heading and h6 is the smallest heading.
+   
+   
+   <h2>Paragraph Tag</h2>
+        <p>
+        This is a paragraph. We often separate a long set of sentences with vertical spaces to make the text easier to read. Browsers ignore vertical white spaces and render all the text as one single set of sentences. To force the browser to add vertical spacing, wrap the paragraphs you want to separate with the paragraph tag
+        </p>
+        <p>
+        This is the first paragraph. The paragraph tag is used to format vertical gaps between long pieces of text like this one.
+        </p>
+        <p>
+        This is the second paragraph. Even though there is a deliberate white gap between the paragraph above and this paragraph, by default browsers render them as one contiguous piece of text as shown here on the right.
+        </p>
+        <p>
+        This is the third paragraph. Wrap each paragraph with the paragraph tag to tell browsers to render the gaps.
+        </p>
+
+    <h2>List Tags</h2>
+        <h3>Ordered List Tag</h3>
+    
+        <b>How to join the 1%</b>
+        <ol>
+            <li>Get a masters in computer science</li>
+            <li>Get a $100K+ starting salary job</li>
+            <li>Marry a like-minded engineer</li>
+            <li>Do great work for a decade</li>
+        </ol>
+
+    <h3>Unordered List Tag</h3>
+        <b>My favorite books (in no particular order)</b>
+        <ul>
+           <li>Dune</li>
+           <li>Lord of the Rings</li>
+           <li>Ender's Game</li>
+           <li>Red Mars</li>
+           <li>The Forever War</li>
+        </ul>
+    <h2>Table Tag</h2>
+        <table border="1" width="100%">
+           <thead>
+           <tr>
+               <th>Quiz</th>
+               <th>Topic</th>
+               <th>Date</th>
+               <th>Grade</th>
+           </tr>
+           </thead>
+           <tbody>
+           <tr>
+               <td>Q1</td>
+               <td>HTML</td>
+               <td>2/3/21</td>
+               <td>85</td>
+           </tr>
+           <tr>
+               <td>Q2</td>
+               <td>CSS</td>
+               <td>2/10/21</td>
+               <td>90</td>
+           </tr>
+           <tr>
+               <td>Q3</td>
+               <td>JavaScript</td>
+               <td>2/17/21</td>
+               <td>95</td>
+           </tr>
+           </tbody>
+           <tfoot>
+           <tr>
+               <td colspan="3">Average</td>
+               <td>90</td>
+           </tr>
+           </tfoot>
+        </table>
+    <h2>Image tag</h2>
+
+        Loading an image from the internet:<br/>
+        
+        <img width="400px"
+            src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
+        <br/>
+        
+        Loading a local image:<br/>
+    
+        <img src="data:image/jpeg;base64,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"
+            height="200px"/>
+    <h1>Input Tags</h1>
+        <input  type="text"
+            placeholder="hint"
+            title="tooltip"
+            value="COMEDY"/>
+    <h2>Text fields</h2>
+            <form id="text-fields">
+               <label for="text-fields-username">Username:</label>
+               <input id="text-fields-username" placeholder="jdoe"/><br/>
+               <label for="text-fields-password">Password:</label>
+               <input type="password" id="text-fields-password"
+                      value="123@#$asd"/><br/>
+               <label for="text-fields-first-name">First name:</label>
+               <input type="text" id="text-fields-first-name"
+                      title="John"/><br/>
+               <label for="text-fields-last-name">Last name:</label>
+               <input type="text" id="text-fields-last-name"
+                      placeholder="Doe" value="Wonderland"/>
+               <!-- copy rest of form elements here -->
+            </form>
+    <h2>Other field types</h2>
+            <label for="text-fields-email">
+               Email:
+            </label>
+            <input type="email"
+                  placeholder="jdoe@somewhere.com"
+                  id="text-fields-email"/><br/>
+            <label for="text-fields-salary-start">
+               Starting salary:
+            </label>
+            <input type="number"
+            id="text-fields-salary-start"
+            placeholder="1000"
+            value="100000"/><br/>
+            <label for="text-fields-rating">
+                Rating:
+            </label>
+            <input type="range" id="text-fields-rating"
+                    placeholder="Doe"
+                    max="5"
+                    value="4"/><br/>
+            <label for="text-fields-dob">
+                Date of birth:
+            </label>
+            <input type="date"
+                    id="text-fields-dob"
+                    value="2000-01-21"/><br/>
+            
+    <h2>Text boxes</h2>
+            <form id="textarea">
+            <label>Biography:</label><br/>
+            <textarea cols="30" rows="10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+            </form>
+        <h3>Buttons</h3>
+            <button type="button">Click me!</button>
+        
+            <select>
+                <option value="VAL1">Value 1</option>
+                <option value="VAL2" selected>
+                    Value 2</option>
+                <option value="VAL3">Value 3</option>
+             </select>
+        
+             <select multiple>
+                <option value="VAL1" selected>Value 1</option>
+                <option value="VAL2">Value 2</option>
+                <option value="VAL3" selected>Value 3</option>
+             </select>
+         <h2>Dropdowns</h2>
+
+        <h3>Select one</h3>
+             <label for="select-one-genre">
+                Favorite movie genre:
+             </label><br/>
+             <select id="select-one-genre">
+                <option value="COMEDY">Comedy</option>
+                <option value="DRAMA">Drama</option>
+                <option selected value="SCIFI">
+                    Science Fiction</option>
+                <option value="FANTASY">Fantasy</option>
+             </select>
+             
+        <h3>Select many</h3>
+             <label for="select-many-genre">
+                Favorite movie genres:
+             </label><br/>
+             <select id="select-many-genre" multiple>
+                <option selected value="COMEDY">Comedy</option>
+                <option value="DRAMA">Drama</option>
+                <option selected value="SCIFI">
+                    Science Fiction</option>
+                <option value="FANTASY">Fantasy</option>
+             </select>
+        <h2>File upload</h2>
+             <input type="file"/>
+
+             <input type="radio"
+             name="NAME1"
+             value="OPTION1"/>
+             <input type="radio" checked
+             name="NAME1"
+             value="OPTION2"/>
+        <h2>Checkboxes</h2>
+             <label>Favorite movie genre:</label>
+             <br/>
+             <input type="checkbox" value="COMEDY"
+                   name="check-genre" id="chkbox-comedy" checked/>
+             <label for="chkbox-comedy">Comedy</label>    <br/>
+             <input type="checkbox" value="DRAMA"
+                   name="check-genre" id="chkbox-drama"/>
+             <label for="chkbox-drama">Drama</label>    <br/>
+             <input type="checkbox" value="SCIFI"
+                   name="check-genre" id="chkbox-scifi" checked/>
+             <label for="chkbox-scifi">Science Fiction</label> <br/>
+             <input type="checkbox" value="FANTASY"
+                   name="check-genre" id="chkbox-fantasy"/>
+             <label for="chkbox-fantasy">Fantasy</label>
+        <h3>Anchor Tag</h3>
+             <a href="aa.com">
+                American Airlines</a>
+                <h2>Anchor tag</h2>
+
+                Please
+                <a href="https://www.lipsum.com">click here</a>
+                to get dummy text<br/>
+                
+                Checkout my <a href="other-page.html">other page</a>
+                
+        <h2>Part 4</h2>
+
+        <a name="embedding-website"></a>
+        <h2>Embedding other websites</h2>
+        <a href="#top">Top</a><br/>
+                <iframe width="600" height="400"
+                src="https://en.wikipedia.org/wiki/Ericeira">
+                </iframe>
+
+    <a name="embedding-youtube"></a>
+    <h2>Embedding YouTube</h2>
+    <a href="#top">Top</a><br/>
+                <iframe width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/7CZTLogln34"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+    <a name="embedding-slides"></a>
+    <h2>Embedding Google slides</h2>
+    <a href="#top">Top</a><br/>
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQoIYM2gXzRLKt4q5D2-ZahG7zvVcAipkRvj5k9GVLiGDs8NPlLpO3Q08cPUKQbqhL6g8aZp1ZJSwrw/embed?start=false&loop=false&delayms=3000"
+                       frameborder="0"
+                       width="680"
+                       height="418"
+                       allowfullscreen="true"
+                       mozallowfullscreen="true"
+                       webkitallowfullscreen="true">
+                </iframe>
+
+        <h2>Drawing rectangles</h2>
+
+                <svg width="300" height="100">
+                   <rect width="300" height="100"
+                         style="fill:rgb(0,0,255); stroke-width:10;
+                   stroke:rgb(0,0,0)" />
+                </svg>
+        <h2>Drawing circles</h2>
+
+                <svg width="100" height="100">
+                   <circle cx="50" cy="50" r="40"
+                           stroke="green" stroke-width="4" fill="yellow" />
+                </svg>
+        <h2>Drawing polygons</h2>
+
+                <svg width="300" height="200">
+                   <polygon points="100,10 40,198 190,78 10,78 160,198"
+                            style="fill:lime; stroke:purple; stroke-width:5; fill-rule:evenodd;" />
+                </svg>
+            
+        
+        
+        
+        
+        
+        
+        
+</body>
+</html>
