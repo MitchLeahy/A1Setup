@@ -21,7 +21,7 @@ const EditProfileComponent = () => {
         dispatch(editProfileFunc({
             ...profile,
             bio: inputBioState,
-            dateOfBirth: inputDateOfBirthState,
+            // dateOfBirth: inputDateOfBirthState,
             firstName: inputFirstNameState,
             handle: inputHandleState,
             lastName: inputLastNameState,
