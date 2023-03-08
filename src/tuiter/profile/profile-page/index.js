@@ -1,4 +1,4 @@
-import {editProfile} from "../../reducers/profile-reducers";
+
 import {Link} from "react-router-dom";
 
 const ProfilePage = ({profile}) => {
