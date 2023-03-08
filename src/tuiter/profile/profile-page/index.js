@@ -19,7 +19,7 @@ const ProfilePage = ({profile}) => {
             </div>
             <div className="row">
                 <div className="col-12">
-                    <img alt = "Responsive image" className= "img-within-div " src = {profile.bannerPicture}/>
+                    <img alt = "" className= "img-within-div " src = {profile.bannerPicture}/>
                 </div>
             </div>
             <div className="row">
