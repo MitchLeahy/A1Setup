@@ -32,7 +32,7 @@ function init() {
     
     `);
    addSelectedOnClick(".list-group-item");
-   addSelectedOnClick(".nav-item");
+   
 
 }
 $(init);

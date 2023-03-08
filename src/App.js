@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+import Labs from './labs/index.js';
+import Tuiter from './tuiter';
+import { BrowserRouter} from 'react-router-dom';
+import { Routes, Route } from 'react-router';
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <div className="container">
+        
+
+        {/* ROUTES OPERATE AS IF-ELSE STATEMENTS */}
+        <Routes>
+          {/* if statement that operates off the url path */}
+          <Route path="/hello" element={<h1>Hello World</h1>} />
+          {/* sets index to labs */}
+          <Route index  element={<Labs/>} />
+          {/* sets tuiter to tuiter  and allows for routeing to be created there*/}
+          <Route path="/tuiter/*" element={<Tuiter/>} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  )
 }
 
 export default App;
