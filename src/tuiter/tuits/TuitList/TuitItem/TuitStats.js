@@ -35,6 +35,7 @@ const TuitStats = ({post}) => {
                 ...post,
                 likes: post.likes - 1,
                 liked: false
+
                 }))} className="bi bi-heart-fill me-2 text-danger"></i>
                 <span className = "left-padding-12 font-lgrey"> {post.likes}</span>
             </div>
@@ -45,7 +46,9 @@ const TuitStats = ({post}) => {
                 <i onClick={() => dispatch(updateTuitThunk({
                 ...post,
                 likes: post.likes + 1,
-                liked: true
+                dislikes: post.dislikes - 1,
+                liked: true,
+                disliked: false
                 }))} className="bi bi-heart-fill me-2"></i>
                 <span className = "left-padding-12 font-lgrey"> {post.likes}</span>
             </div>
@@ -65,8 +68,10 @@ const TuitStats = ({post}) => {
             <div className = "col-3">
                 <i onClick={() => dispatch(updateTuitThunk({
                 ...post,
+                likes: post.likes - 1,
                 dislikes: post.dislikes + 1,
-                disliked: true
+                disliked: true,
+                liked: false
                 }))} className="bi bi-hand-thumbs-down-fill me-2"></i>
                 <span className = "left-padding-12 font-lgrey"> {post.dislikes}</span>
             </div>
