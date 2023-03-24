@@ -2,17 +2,17 @@ import React from 'react';
 import TuitStats from './TuitStats';
 import {useDispatch} from "react-redux";
 
-import {deleteTuit} from "../../../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../../../services/tuits-thunks.js";
 
 
 const TuitItem = ({post}) => {
     
     const dispatch = useDispatch();
-    const deleteTuitHandler = (id) => { dispatch(deleteTuit(id));}
+    const deleteTuitHandler = (id) => { dispatch(deleteTuitThunk(id));}
 
     return(
     
-    <li className = "list-group-item no-border top-border bottom-border">
+    <li key = {post._id} className = "list-group-item no-border top-border bottom-border">
         <div className = "row">
             
             <div className= "col-2"> <img className = "post-profile-pic" alt = "" src= {`${post.image}`}/> </div>
