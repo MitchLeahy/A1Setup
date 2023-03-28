@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const TUITS_API = 'http://localhost:4000/tuits';
+const TUITS_API = 'https://tuiter-node-server-mleahy.herokuapp.com/tuits';
 
 
 export const findTuits = async () => {

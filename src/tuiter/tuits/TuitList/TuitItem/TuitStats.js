@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart, faRetweet, faComment, faShare } from '@fortawesome/free-solid-svg-icons'
-import {likeTuit,unlikeTuit} from '../../../reducers/tuits-reducer';
+import { faRetweet, faComment, } from '@fortawesome/free-solid-svg-icons'
+
 import {useDispatch} from "react-redux"
 import { updateTuitThunk } from '../../../services/tuits-thunks.js';
 
@@ -9,12 +9,7 @@ const TuitStats = ({post}) => {
 
     const dispatch = useDispatch();
 
-    // const likeTuitHandler = (post) => {
-    //     dispatch(likeTuit(post))
-    // }
-    // const unlikeTuitHandler = (post) => {
-    //     dispatch(unlikeTuit(post))
-    // }
+
    
     return(
         <div className = "row mt-2">
@@ -29,7 +24,7 @@ const TuitStats = ({post}) => {
                 <span className = "left-padding-12 font-lgrey"> {post.retuits}</span>
             </div>
          
-         {post.liked &&
+         {post.liked && !post.disliked &&
             <div className = "col-3">
                 <i onClick={() => dispatch(updateTuitThunk({
                 ...post,
@@ -41,7 +36,7 @@ const TuitStats = ({post}) => {
             </div>
             }
 
-            { !post.liked &&
+            { !post.liked && post.disliked &&
             <div className = "col-3">
                 <i onClick={() => dispatch(updateTuitThunk({
                 ...post,
@@ -53,7 +48,29 @@ const TuitStats = ({post}) => {
                 <span className = "left-padding-12 font-lgrey"> {post.likes}</span>
             </div>
             }
-            {post.disliked &&
+            { !post.liked && !post.disliked &&
+            <div className = "col-3">
+                <i onClick={() => dispatch(updateTuitThunk({
+                ...post,
+                likes: post.likes + 1,
+                liked: true,
+                disliked: false
+                }))} className="bi bi-heart-fill me-2"></i>
+                <span className = "left-padding-12 font-lgrey"> {post.likes}</span>
+            </div>
+            }
+            { !post.disliked && !post.liked && 
+            <div className = "col-3">
+                <i onClick={() => dispatch(updateTuitThunk({
+                ...post,
+                dislikes: post.dislikes + 1,
+                disliked: true,
+                liked: false
+                }))} className="bi bi-hand-thumbs-down-fill me-2"></i>
+                <span className = "left-padding-12 font-lgrey"> {post.dislikes}</span>
+            </div>
+            }
+            {post.disliked && !post.liked &&
             <div className = "col-3">
                 <i onClick={() => dispatch(updateTuitThunk({
                 ...post,
@@ -64,7 +81,7 @@ const TuitStats = ({post}) => {
             </div>
             }
 
-            { !post.disliked &&
+            { !post.disliked && post.liked &&
             <div className = "col-3">
                 <i onClick={() => dispatch(updateTuitThunk({
                 ...post,
