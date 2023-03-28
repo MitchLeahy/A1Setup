@@ -16,7 +16,7 @@ useEffect(() => {
    <ul className="list-group">
       {/* if this were true it would display loading properly */}
     {
-      loading && <li key = "loading6"className="list-group-item">Loading...</li>
+      loading && <li key = "loading6" className="list-group-item">Loading...</li>
     }
      {
        tuits.map(post =>
