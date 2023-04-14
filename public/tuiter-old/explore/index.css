@@ -16,6 +16,9 @@
 .color-black {
     color: #000000;
 }
+.color-white {
+    color: #ffffff;
+}
 .text-bold{
     font-weight: bold;
     color:black;
@@ -31,17 +34,17 @@
 .follow-btn {
     height: 40px;
     width: 75px;
-    background-color: black;
+    background-color: #1da1f2;
     border:none;
 }
 .wd-cog{
     bottom: 12px;
     right: 18px;
-    color:black;
+    color:#1da1f2;
 }
-.tab-selected{
-    border-bottom: 2px solid #1da1f2;
-    color: black;
+.selected{
+    background-color:  #1da1f2;
+    color: white;
     font-weight: bold;
 }
 .above-bottom-5{
@@ -61,3 +64,12 @@
 .top-border{
     border-top: 1px solid #c9c7c7;
 }
+.fw-bold{
+    font-weight: bold;
+    color: white;
+}
+.tuit-pic{
+    border-radius: 15%;
+
+}
+
