@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--style>
+            p {
+                background-color: blue;
+                color: white;
+            }
+        </style-->
+        <link href="index.css"
+              rel="stylesheet"/>
+     </head>
+    <body>
+        <h1>Cascading Style Sheet (CSS)</h1>
+            <h2>Style attribute and tag</h2>
+            <h3>Style attribute</h3>
+            <p style="background-color: blue; color: white">
+            Style attribute allows configuring look
+            and feel right on the element. Although it's 
+            very convenient it is considered bad practice 
+            and you should avoid using the style attribute
+            </p>
+        <h3>Style tag</h3>
+            <p>
+            A slightly better way to configure look and feel
+            is to declare CSS rules in the STYLE tag in the
+            header and then refer to the tag by their name, 
+            ID, or class This paragraph's style is set by a 
+            rule referring to the P tags
+            </p>
+        <h3>Link tag</h3>
+            <p>
+               The best way to apply CSS rules is to declare
+               them in a separate CSS file and load it with 
+               the LINK tag. Always use this method.
+            </p>
+        <h3>ID selectors</h3>
+            <p id="id-selector-1">
+            Instead of changing the look and
+            feel of all the elements of the 
+            same name, e.g., P, we can refer 
+            to a specific element by its ID
+            </p>
+            <p id="id-selector-2">
+            Here's another paragraph using a
+            different ID and a different look 
+            and feel
+            </p>
+                        
+        <h3>Class selectors</h3>
+            <p class="class-selector">
+             Instead of using IDs to refer
+             to elements, you can use an
+             element's CLASS attribute</p>
+
+        <h4 class="class-selector">
+             This heading has same style as
+             paragraph above</h4>
+
+        <div class="selector-1">
+        
+        <h3>Document structure selectors</h3>
+
+        <div class="selector-2">
+            Selectors can be combined to refer elements in
+            particular places in the document
+            <p class="selector-3">
+            This paragraph's red background is referenced as
+            <br/>.selector-2 .selector3<br/>
+            meaning the descendant of some ancestor.
+            <br/>
+            <span class="selector-4">Whereas this span is a
+            direct child of its parent</span>
+            <br/>
+            You can combine these relationships to create
+            specific styles depending on the document 
+            structure
+            </p>
+        </div>
+        </div>
+
+        <h2>Colors</h2>
+            <h3 class="fg-color-blue">Foreground color</h3>
+            <p class="fg-color-red">
+            The text in this paragraph is red but
+            <span class="fg-color-green">this text is green</span>
+            </p>
+        <h2>Borders</h2>
+            <p class="border-fat border-red border-solid">
+               Solid fat red border</p>
+            <p class="border-thin border-blue border-dashed">
+               Dashed thin blue border</p>
+               <h2>Padding</h2>
+               <div class="padded-top-left border-fat 
+                           border-red border-solid 
+                           bg-color-yellow">
+                  Padded top left
+               </div>
+               <div class="padded-bottom-right border-fat border-blue border-solid bg-color-yellow">
+                    Padded bottom right
+                </div>
+                <div class="padding-fat border-fat 
+                            border-yellow border-solid 
+                            bg-color-blue fg-color-white">
+                    Padded all around
+                </div>
+        <h2>Margins</h2>
+                <div class="margin-bottom 
+                            padded-top-left 
+                            border-fat border-red 
+                            border-solid 
+                            bg-color-yellow">
+            Margin bottom</div>
+                <div class="margin-right-left 
+                            padded-bottom-right 
+                            border-fat border-blue 
+                            border-solid 
+                            bg-color-yellow">
+            Margin left right
+                </div>
+                <div class="margin-all-around 
+                            padding-fat border-fat 
+                            border-yellow 
+                            border-solid 
+                            bg-color-blue 
+                            fg-color-white">
+                   Margin all around
+                </div>
+
+        <h3>Rounded corners</h3>
+                <p class="rounded-corners-top border-thin border-blue border-solid padding-fat">
+                  Rounded corners on the top
+                </p>
+                <p class="rounded-corners-bottom border-thin border-blue border-solid padding-fat">
+                  Rounded corners at the bottom
+                </p>
+                <p class="rounded-corners-all-around border-thin border-blue border-solid padding-fat">
+                  Rounded corners all around
+                </p>
+                <p class="rounded-corners-inline border-thin border-blue border-solid padding-fat">
+                  Different rounded corners
+                </p>
+        <h2>Dimension</h2>
+                <div>
+                   <div class="dimension-portrait bg-color-yellow">
+                       Portrait
+                   </div>
+                   <div class="dimension-landscape bg-color-blue
+                               fg-color-white">
+                       Landscape
+                   </div>
+                   <div class="dimension-square bg-color-red">
+                       Square
+                   </div>
+                </div>
+        <h2>Position</h2>
+                <h3>Relative</h3>
+                <div>
+                 <div class="bg-color-yellow 
+                             dimension-portrait">
+                  <div class="pos-relative-nudge-down-right">
+                       Portrait</div>
+                 </div>
+                 <div class="pos-relative-nudge-up-right 
+                             bg-color-blue fg-color-white 
+                             dimension-landscape">
+                       Landscape</div>
+                 <div class="bg-color-red dimension-square">
+                       Square</div>
+                </div>
+        <h3>Absolute position</h3>
+                <div class="pos-relative">
+                   <div class="pos-absolute-10-10 
+                    bg-color-yellow dimension-portrait">
+                       Portrait
+                   </div>
+                   <div class="pos-absolute-50-50 
+                        bg-color-blue fg-color-white 
+                        dimension-landscape">
+                       Landscape   </div>
+                   <div class="pos-absolute-120-20 
+                        bg-color-red dimension-square">
+                       Square      </div>
+                </div><br/><br/><br/><br/><br/><br/><br/>
+        <h3>Fixed position</h3>
+
+                Checkout the blue square that says 
+                "Fixed position" stuck all the way 
+                on the right and half way down the 
+                page. It doesn't scroll with the 
+                rest of the page. Its position is 
+                "Fixed".
+              
+              <div class="pos-fixed 
+                          dimension-square 
+                          bg-color-blue 
+                          fg-color-white">
+                Fixed position
+              </div>
+        <h2>Z index</h2>
+              <div class="pos-relative">
+                 <div class="pos-absolute-10-10 
+                      bg-color-yellow 
+                      dimension-portrait">
+                      Portrait</div>
+                 <div class="zindex-bring-to-front 
+                      pos-absolute-50-50 
+                      bg-color-blue fg-color-white 
+                      dimension-landscape">
+                      Landscape</div>
+                 <div class="pos-absolute-120-20 
+                      bg-color-red dimension-square">
+                      Square</div>
+              </div><br/><br/><br/><br/><br/><br/><br/>
+
+        <h2>Float</h2>
+              <div>
+                 <div class="float-left dimension-portrait bg-color-yellow">
+                      Yellow</div>
+                 <div class="float-left dimension-portrait bg-color-blue fg-color-white">
+                      Blue</div>
+                 <div class="float-left dimension-portrait bg-color-red">
+                      Red</div>
+                 <img class="float-right"      src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
+                 <div class="float-done"></div>
+              </div>
+        <h2>Grid layout</h2>
+              <div class="grid-row">
+                <div class="grid-col-half-page bg-color-yellow">
+                  <h3>Left half</h3>
+                </div>
+                <div class="grid-col-half-page bg-color-blue
+                            fg-color-white">
+                  <h3>Right half</h3>
+                </div>
+              </div> 
+              <div class="grid-row">
+                <div class="grid-col-third-page bg-color-green
+                            fg-color-white">
+                  <h3>Left third</h3>
+                </div>
+                <div class="grid-col-two-thirds-page bg-color-red
+                            fg-color-white">
+                  <h3>Right two thirds</h3>
+                </div>
+              </div>
+              <div class="grid-row">
+                <div class="grid-col-left-sidebar bg-color-yellow">
+                  <h3>Side bar</h3>
+                  <p>This is the left sidebar</p>
+                </div>
+                <div class="grid-col-main-content bg-color-blue
+                            fg-color-white">
+                  <h3>Main content</h3>
+                  <p>This is the main content. This is the main content.
+                     This is the main content. </p>
+                </div>
+                <div class="grid-col-right-sidebar bg-color-green
+                            fg-color-white">
+                  <h3>Side bar</h3>
+                  <p>This is the right sidebar</p>
+                </div>
+              </div>
+            </div><br/><br/><br/><br/><br/><br/><br/>
+
+    <div class = margin-top>
+        <h1>Section 5: Challeges</h1>
+
+            <h2>Rotations</h2>
+            <h3>Rotating a paragraph</h3>
+            <p class="rotate-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+            <h3>Rotating a list</h3>
+            <ul class="rotate-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            </ul>
+
+            <h3>Rotating list items</h3>
+            <ul class="rotate-list-items">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            </ul>
+
+            <h3>Rotating an image</h3>
+            <img class="rotate-image" width="400px"
+                src="data:image/jpeg;base64,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"/>
+            </div><br/><br/><br/><br/><br/><br/><br/>
+
+            <h3>Rotating a table</h3>
+                <br/><br/>
+                <table border="1" class="rotate-table">
+                   <tr><td>Return rate</td><td>Monthly contributions</td>
+                       <td>Balance after 40 years</td></tr>
+                   <tr><td>5</td><td>250</td><td>372,141.15</td></tr>
+                   <tr><td>5</td><td>500</td><td>744,282.29</td></tr>
+                   <tr><td>5</td><td>1000</td><td>1,488,564.58</td></tr>
+                   <tr><td>7</td><td>250</td><td>621,379.12</td></tr>
+                   <tr><td>7</td><td>500</td><td>1,242,758.23</td></tr>
+                   <tr><td>7</td><td>1000</td><td>2,485,516.46</td></tr>
+                   <tr><td>10</td><td>250</td><td>1,398,651.85</td></tr>
+                   <tr><td>10</td><td>500</td><td>2,797,303.70</td></tr>
+                   <tr><td>10</td><td>1000</td><td>5,594,607.40</td></tr>
+                   <tr><td>13</td><td>250</td><td>3,251,260.21</td></tr>
+                   <tr><td>13</td><td>500</td><td>6,502,520.42</td></tr>
+                   <tr><td>13</td><td>1000</td><td>13,005,040.83</td></tr>
+                </table>
+
+        <h3>Linear gradients</h3>
+                <p class="gradients-linear">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+        <h3>Radial gradients</h3>
+                <p class="gradients-radial">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+        <h3>Positioning radial gradients</h3>
+                    <p class="gradients-positioned">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+        <h2>Animations</h2>
+                    <h3>Keyframe animations</h3>
+
+                   <!-- <p class="animation-keyframes">WhAt'S gOiNg OnNnNn</p>-->
+
+    
+        <div class="flex-container">
+            <div class="flex-box flex-box-1">Box 1</div>
+            <div class="flex-box flex-box-2">
+                Box 2 Box 2<br/>Box 2 Box 2
+            </div>
+            <div class="flex-box flex-box-3">
+                Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+            </div>
+                      </div>   
+            <h2>Start</h2>
+            <div class="flex-container-center">
+                <div class="flex-box flex-box-1">Box 1</div>
+                <div class="flex-box flex-box-2">
+                    Box 2 Box 2<br/>Box 2 Box 2
+                </div>
+                <div class="flex-box flex-box-3">
+                    Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+                </div>
+            </div> 
+            <h2>End</h2>
+            <div class="flex-container-end">
+                <div class="flex-box flex-box-1">Box 1</div>
+                <div class="flex-box flex-box-2">
+                    Box 2 Box 2<br/>Box 2 Box 2
+                </div>
+                <div class="flex-box flex-box-3">
+                    Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+                </div>
+            </div>   
+            <h2>Space around</h2>
+            <div class="flex-container-space-around">
+                <div class="flex-box flex-box-1">Box 1</div>
+                <div class="flex-box flex-box-2">
+                    Box 2 Box 2<br/>Box 2 Box 2
+                </div>
+                <div class="flex-box flex-box-3">
+                    Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+                </div>
+            </div>   
+            <h2>Space Between</h2>
+            <div class="flex-container-space-between">
+                <div class="flex-box flex-box-1">Box 1</div>
+                <div class="flex-box flex-box-2">
+                    Box 2 Box 2<br/>Box 2 Box 2
+                </div>
+                <div class="flex-box flex-box-3">
+                    Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+                </div>
+            </div>  
+            <h2>Align Felx Start</h2>
+            <div class="flex-container-align-flex-start">
+                <div class="flex-box flex-box-1">Box 1</div>
+                <div class="flex-box flex-box-2">
+                    Box 2 Box 2<br/>Box 2 Box 2
+                </div>
+                <div class="flex-box flex-box-3">
+                    Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+                </div>
+            </div>   
+            <h2>Align Center</h2>
+            <div class="flex-container-align-center">
+                <div class="flex-box flex-box-1">Box 1</div>
+                <div class="flex-box flex-box-2">
+                    Box 2 Box 2<br/>Box 2 Box 2
+                </div>
+                <div class="flex-box flex-box-3">
+                    Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+                </div>
+            </div>  
+            <h2>Even Elements</h2>
+            <div class="flex-container flex-container-even-elements">
+                <div class="flex-box flex-box-1">Box 1<br/><br/><br/></div>
+                <div class="flex-box flex-box-2">
+                    Box 2 Box 2<br/>Box 2 Box 2<br/><br/>
+                </div>
+                <div class="flex-box flex-box-3">
+                    Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+                </div>
+            </div>  
+        
+    <div >
+    <h2>Media queries</h2>
+    
+        <p class="media-query">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    
+        
+    </div>
+        
+
+
+    
+
+
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    
+    
+</div>
+
+
+
+
+    </body>
+</html>
